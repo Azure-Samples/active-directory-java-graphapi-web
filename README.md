@@ -34,7 +34,7 @@ If you already have a user account in your Azure Active Directory tenant, you ca
  6. Click "Add an application my organization is developing".
  7. Enter a friendly name for the application, for example "WebApp-GraphAPI-Java", select "Web Application and/or Web API", and click next.
  8. For the sign-on URL, enter the base URL for the sample, which is by default `https://localhost:44320`.
- 9. For the App ID URI, enter `https://<your_tenant_name>/WebAppJava`, replacing `<your_tenant_name>` with the name of your Azure AD tenant.
+ 9. For the App ID URI, enter `https://<your_tenant_name>/WebApp`, replacing `<your_tenant_name>` with the name of your Azure AD tenant.
 
 All done!  Before moving on to the next step, you need to find the Client ID of your application, and create an App Key.
 
