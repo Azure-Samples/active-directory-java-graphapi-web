@@ -67,8 +67,15 @@ Optionally, you can also import the JavaSampleApp.war file by selecting from Ecl
 7. To see the opened project:
  a. Click Window/Show View/Project Explorer. This would show the project explorer which would show the whole project hierarchy on
      the left of your screen.
- b. Now right click on the project name, and select ‘Run As/Run on Server’.
- c. This would prompt you to specify a server                                                           
+
+ b. update the web.xml file - under WebContent -> WEB-INF, locate web.xml file and open it.
+    Update 3 <init-param> values in the web.xml:
+      i. Replace the current <param-value> under <param-name>TenantContextId</param-name> with your tenant domain name (e.g.          MyTestConpany.OnMicrosoft.com). Also replace the <param-value> under <param-name>TenantDomainName</param-name> with your tenant domain name.
+     ii. Replace the <param-value> under <param-name>AppPrincipalId</param-name> with the client ID value that was configured from the Azure Management Portal.
+    iii. Replace the <param-value> under <param-name>SymmetricKey</param-name> with the Key value that was configured from the Azure Managment Portal.
+    Save the web.xml file.
+ c. Now right click on the project name, and select ‘Run As/Run on Server’.
+ d. This would prompt you to specify a server                                                           
     i. Select Apache Tomcat V7.0                                                             
     ii. Select the root directory of the tomcat server.                                                          
     iii. Select “Always use this server”.
