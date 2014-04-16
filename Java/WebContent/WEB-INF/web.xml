@@ -12,12 +12,14 @@
           <param-name>DataContractVersion</param-name>
           <param-value>api-version=2013-11-08</param-value>
       </init-param>
-
+      
+      <!-- Replace TenantContextId with your tenant's domain name e.g. Contoso.OnMicrosoft.com  -->
       <init-param>
           <param-name>TenantContextId</param-name>
           <param-value>graphDir1.onMicrosoft.com</param-value>
       </init-param>
-
+      
+      <!-- Replace TenantDomainName with your tenant's domain name e.g. Contoso.OnMicrosoft.com  -->
       <init-param>
           <param-name>TenantDomainName</param-name>
           <param-value>graphDir1.onMicrosoft.com</param-value>

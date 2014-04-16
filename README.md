@@ -69,10 +69,10 @@ Optionally, you can also import the JavaSampleApp.war file by selecting from Ecl
      the left of your screen.
 
  b. update the web.xml file - under WebContent -> WEB-INF, locate web.xml file and open it.
-    Update 3 <init-param> values in the web.xml:
-      i. Replace the current <param-value> under <param-name>TenantContextId</param-name> with your tenant domain name (e.g.          MyTestConpany.OnMicrosoft.com). Also replace the <param-value> under <param-name>TenantDomainName</param-name> with your tenant domain name.
-     ii. Replace the <param-value> under <param-name>AppPrincipalId</param-name> with the client ID value that was configured from the Azure Management Portal.
-    iii. Replace the <param-value> under <param-name>SymmetricKey</param-name> with the Key value that was configured from the Azure Managment Portal.
+    Update 3 '<init-param>' values in the web.xml:
+      i. Replace the current '<param-value>' under '<param-name>TenantContextId</param-name>' with your tenant domain name (e.g.          MyTestConpany.OnMicrosoft.com). Also replace the '<param-value>' under '<param-name>TenantDomainName</param-name>' with your tenant domain name.
+     ii. Replace the '<param-value>' under '<param-name>AppPrincipalId</param-name>' with the client ID value that was configured from the Azure Management Portal.
+    iii. Replace the '<param-value>' under '<param-name>SymmetricKey</param-name>' with the Key value that was configured from the Azure Managment Portal.
     Save the web.xml file.
  c. Now right click on the project name, and select ‘Run As/Run on Server’.
  d. This would prompt you to specify a server                                                           
