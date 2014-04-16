@@ -41,7 +41,7 @@ Almost done!  Before moving on to the next step, you need to find the Client ID 
 1. While still in the Azure portal, click the Configure tab of your application.
 2. Find the Client ID value and copy it to the clipboard.
 3. Add a key - select a key duration of either 1 year or 2 year. When you save this page, the key value will be displayed, copy and save the value in a safe location - you will need this key later to configurate the Client Credentials for this app - this key value will not be displayed again, nor retrievable by any other means, so please record it as soon as it is visible from the Azure Portal.
-4.  Configure Permissions - under the "Permissions to other applications" section, select application "Windows Azure Active Directory" (this is the Graph API), and under the first permission column (Application Permissions), select "Read Diretory data".  This sample app doesn't use delegated permssions, so the Permission under Delegated Permissions are not used.
+4. Configure Permissions - under the "Permissions to other applications" section, select application "Windows Azure Active Directory" (this is the Graph API), and under the first permission column (Application Permissions), select "Read Diretory data".  This sample app doesn't use delegated permssions, so the Permission under Delegated Permissions are not used.
 
 ### Step 4:  Configure the sample to use your Azure Active Directory tenant
 
@@ -53,12 +53,12 @@ The Sample application can be built using the Eclipse IDE, and runs under Tomcat
 
 3. Set a system environmental variable named JAVA_HOME and give the variable value to your java installation. Typically, this value would be something like: C:\Program Files\Java\jdk1.7.0_06
 
-4.Download and install the Eclipse IDE for Java EE Developers from the following website (select the version for your development environment (e.g. Windows x86).  Eclipse IDE for Java EE - simply execute Eclipse.exe from a command line.
+4. Download and install the Eclipse IDE for Java EE Developers from the following website (select the version for your development environment (e.g. Windows x86).  Eclipse IDE for Java EE - simply execute Eclipse.exe from a command line.
 
 5. Download and install Apache Tomcat. Apache TomCat  (http://tomcat.apache.org/)
 You can run Apache Tomcat by clicking <tomcat folder>/bin/startup.bat script. You can also shut down apache tomcat by clicking mcat folder>/bin/shutdown.bat. When running your application from Eclipse, it can be configured to automatically start Apache Tomcat, and execute in normal or debug mode. 
 
-6.Import the project in Eclipse by:
+6. Import the project in Eclipse by:
  a. Starting Eclipse by clicking Eclipse.exe.
  b. Specify a workspace folder of your choice.
  c. Click File/Import/General/Existing Projects Into the workspace
