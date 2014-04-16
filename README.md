@@ -48,8 +48,11 @@ Almost done!  Before moving on to the next step, you need to find the Client ID 
 The Sample application can be built using the Eclipse IDE, and runs under Tomcat.The following instructions are provided:
 
 1.Download and install the JDK 7 from the Oracle Website (select the version for your development environment (e.g. Windows x64) JDK 7 
+
 2. Select JDK Standard Edition (JDK SE 7 with latest update).
+
 3. Set a system environmental variable named JAVA_HOME and give the variable value to your java installation. Typically, this value would be something like: C:\Program Files\Java\jdk1.7.0_06
+
 4.Download and install the Eclipse IDE for Java EE Developers from the following website (select the version for your development environment (e.g. Windows x86).  Eclipse IDE for Java EE - simply execute Eclipse.exe from a command line.
 
 5. Download and install Apache Tomcat. Apache TomCat  (http://tomcat.apache.org/)
@@ -67,11 +70,10 @@ Optionally, you can also import the JavaSampleApp.war file by selecting from Ecl
 7. To see the opened project:
  a. Click Window/Show View/Project Explorer. This would show the project explorer which would show the whole project hierarchy on the left of your screen.
 
- b. update the web.xml file - under WebContent -> WEB-INF, locate web.xml file and open it.
-    Update 3 '<init-param>' values in the web.xml:
-      i. Replace the current param-value under TenantContextId with your tenant domain name (e.g.          MyTestConpany.OnMicrosoft.com). Also replace the param-value under TenantDomainName with your tenant domain name.
-     ii. Replace the param-value under AppPrincipalId with the client ID value that was configured from the Azure Management Portal.
-    iii. Replace the param-value under SymmetricKey with the Key value that was configured from the Azure Managment Portal.
+ b. update the web.xml file - under WebContent -> WEB-INF, locate web.xml file and open it - update three init-param values in the web.xml:
+  i. Replace the current param-value under TenantContextId with your tenant domain name (e.g.  MyTestConpany.OnMicrosoft.com). Also replace the param-value under TenantDomainName with your tenant domain name.
+ ii. Replace the param-value under AppPrincipalId with the client ID value that was configured from the Azure Management Portal.
+ iii. Replace the param-value under SymmetricKey with the Key value that was configured from the Azure Managment Portal.
     Save the web.xml file.
  c. Now right click on the project name, and select �Run As/Run on Server�.
  d. This would prompt you to specify a server                                                           
