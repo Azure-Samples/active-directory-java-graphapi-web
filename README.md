@@ -4,7 +4,7 @@ platforms:
 author: azure
 ---
 
-WebApp-GraphAPI-Java
+Calling the Azure AD Graph API in a web application
 ====================
 This Java sample application is a web app that reads directory data from the Windows Azure Active Directory Graph API, and executes queries against a demo company. The full list of capabilities for the Graph API can be found on MSDN (link below). If you would like to access your own Azure AD tenant's directory data, then the application must be configured with your own Tenant ID, Application ID and App Key - these values are stored in the app's web.xml file, then rebuild the application. 
 
