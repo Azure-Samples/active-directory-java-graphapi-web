@@ -1,7 +1,7 @@
 ---
 services: active-directory
 platforms: java
-author: dstrockis
+author: brandwe
 ---
 
 Calling the Azure AD Graph API in a web application
