@@ -6,7 +6,7 @@ author: brandwe
 
 Calling the Azure AD Graph API in a web application
 ====================
-This Java sample application is a web app that reads directory data from the Windows Azure Active Directory Graph API, and executes queries against a demo company. The full list of capabilities for the Graph API can be found on MSDN (link below). If you would like to access your own Azure AD tenant's directory data, then the application must be configured with your own Tenant ID, Application ID and App Key - these values are stored in the app's web.xml file, then rebuild the application. 
+This Java sample application is a web app that reads directory data from the Azure Active Directory Graph API, and executes queries against a demo company. The full list of capabilities for the Graph API can be found on MSDN (link below). If you would like to access your own Azure AD tenant's directory data, then the application must be configured with your own Tenant ID, Application ID and App Key - these values are stored in the app's web.xml file, then rebuild the application. 
 
 
 ## How To Run This Sample
@@ -47,7 +47,7 @@ Almost done!  Before moving on to the next step, you need to find the Client ID 
 1. While still in the Azure portal, click the Configure tab of your application.
 2. Find the Client ID value and copy it to the clipboard.
 3. Add a key - select a key duration of either 1 year or 2 year. When you save this page, the key value will be displayed, copy and save the value in a safe location - you will need this key later to configurate the Client Credentials for this app - this key value will not be displayed again, nor retrievable by any other means, so please record it as soon as it is visible from the Azure Portal.
-4. Configure Permissions - under the "Permissions to other applications" section, select application "Windows Azure Active Directory" (this is the Graph API), and under the first permission column (Application Permissions), select "Read Diretory data".  This sample app doesn't use delegated permssions, so the Permission under Delegated Permissions are not used.
+4. Configure Permissions - under the "Permissions to other applications" section, select application "Azure Active Directory" (this is the Graph API), and under the first permission column (Application Permissions), select "Read Diretory data".  This sample app doesn't use delegated permssions, so the Permission under Delegated Permissions are not used.
 
 ### Step 4:  Configure the sample to use your Azure Active Directory tenant
 
