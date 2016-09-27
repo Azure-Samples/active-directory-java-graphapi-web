@@ -16,9 +16,8 @@ Getting started is simple!  To run this sample you will need:
 - Eclipse IDE
 - Apache Tomcat
 - An Internet connection
-- An Azure subscription (a free trial is sufficient)
-
-Every Azure subscription has an associated Azure Active Directory tenant.  If you don't already have an Azure subscription, you can get a free subscription by signing up at [https://azure.microsoft.com](https://azure.microsoft.com).  All of the Azure AD features used by this sample are available free of charge.
+- An Azure Active Directory (Azure AD) tenant. For more information on how to get an Azure AD tenant, please see [How to get an Azure AD tenant](https://azure.microsoft.com/en-us/documentation/articles/active-directory-howto-tenant/) 
+- A user account in your Azure AD tenant. This sample will not work with a Microsoft account, so if you signed in to the Azure portal with a Microsoft account and have never created a user account in your directory before, you need to do that now.
 
 ### Step 1:  Clone or download this repository
 
@@ -26,11 +25,7 @@ From your shell or command line:
 
 `git clone git@github.com:Azure-Samples/active-directory-java-graphapi-web.git`
 
-### Step 2:  Create a user account in your Azure Active Directory tenant
-
-If you already have a user account in your Azure Active Directory tenant, you can skip to the next step.  This sample will not work with a Microsoft account, so if you signed in to the Azure portal with a Microsoft account and have never created a user account in your directory before, you need to do that now.  If you create an account and want to use it to sign-in to the Azure portal, don't forget to add the user account as a co-administrator of your Azure subscription.
-
-### Step 3:  Register the sample with your Azure Active Directory tenant
+### Step 2:  Register the sample with your Azure Active Directory tenant
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. On the top bar, click on your account and under the **Directory** list, choose the Active Directory tenant where you wish to register your application.
@@ -42,7 +37,7 @@ If you already have a user account in your Azure Active Directory tenant, you ca
 8. From the Settings menu, choose **Keys** and add a key - select a key duration of either 1 year or 2 years. When you save this page, the key value will be displayed, copy and save the value in a safe location - you will need this key later to configure the project in Visual Studio - this key value will not be displayed again, nor retrievable by any other means, so please record it as soon as it is visible from the Azure Portal.
 9. Configure Permissions for your application - in the Settings menu, choose the 'Required permissions' section, click on **Add**, then **Select an API**, and select 'Microsoft Graph' (this is the Graph API). Then, click on  **Select Permissions** and select 'Read Directory Data'.
 
-### Step 4:  Configure the sample to use your Azure Active Directory tenant
+### Step 3:  Configure the sample to use your Azure Active Directory tenant
 
 The Sample application can be built using the Eclipse IDE, and runs under Tomcat.The following instructions are provided:
 
