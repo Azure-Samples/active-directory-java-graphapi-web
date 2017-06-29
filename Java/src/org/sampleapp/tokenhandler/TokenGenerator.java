@@ -27,7 +27,7 @@ public class TokenGenerator {
 			String appId, String symmetricKey, 
 			String protectedResourceHostName) throws SampleAppException{
 	
-//		String evoStsUrl = String.format("https://login.windows.net/%s/oauth2/token?api-version=1.0", tenantContextId);
+//		String evoStsUrl = String.format("https://login.microsoftonline.com/%s/oauth2/token?api-version=1.0", tenantContextId);
 		String evoStsUrl = String.format(AppParameter.getEvoStsUrl(), tenantContextId);
         String resource = "https://" + protectedResourceHostName;
 		String token = JWTTokenHelper.getOAuthAccessTokenFromEvoSTS(evoStsUrl, appId, symmetricKey, resource);
