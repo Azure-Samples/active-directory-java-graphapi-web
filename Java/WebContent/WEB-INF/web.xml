@@ -48,7 +48,7 @@
       
       <init-param>
           <param-name>EvoStsUrl</param-name>
-        <param-value>https://login.windows.net/%s/oauth2/token?api-version=1.0</param-value> 
+        <param-value>https://login.microsoftonline.com/%s/oauth2/token?api-version=1.0</param-value> 
       </init-param>
       
       <!-- Replace SymmetricKey value with the Key value obtained from the App configuration done in the Azure Management Portal  -->
