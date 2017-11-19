@@ -3,8 +3,8 @@ package org.sampleapp.tokenhandler;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLConnection;
 import java.net.URLEncoder;
 //import java.util.Calendar;
 //import java.util.Date;
@@ -75,6 +75,8 @@ public class JWTTokenHelper {
 		
 		String accessToken = "";
 				
+		HttpURLConnection conn = null;
+
 		URL url = null;
 		
 		String data = null;
@@ -87,7 +89,7 @@ public class JWTTokenHelper {
 			
 			url = new URL(evoStsUrl);
 			
-			URLConnection conn = url.openConnection();
+			conn = (HttpURLConnection)url.openConnection();
 			
 			conn.setDoOutput(true);
 			
@@ -112,6 +114,10 @@ public class JWTTokenHelper {
 			
 		} catch (Exception e2) {
 			throw new SampleAppException(AppParameter.ErrorGeneratingToken, AppParameter.ErrorGeneratingTokenMessage, e2, null);
+		} finally {
+			if (conn!= null) {
+				conn.disconnect();
+			}
 		}
 	}
 
